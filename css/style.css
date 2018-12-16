@@ -1,0 +1,19 @@
+			#wrap	{
+				width: 300px;
+				height: 300px;
+				margin: 30vh auto;
+				text-align: center;
+			}
+			#dan	{
+				width: 30px;
+			}
+			#mesec	{
+				width: 30px;
+			}
+			#godina	{
+				width: 50px;
+			}
+			#button	{
+				width: 50px;
+				height: 20px;
+			}
