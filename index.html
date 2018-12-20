@@ -2,23 +2,173 @@
 	
 	<head>
 		<title>How old are you?</title>
+		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="scss/style.css">
 	</head>
 	
-	<body>
+	<body onload="wrapMainSize();">
 
-		<div id="wrap">
-			<p>Calculate how old are you</p>
-			<input type="number" name="dan" id="dan"> 
-			<input type="number" name="mesec" id="mesec">
-			<input type="number" name="godina" id="godina">
-			<button id="calculate" onclick="calculate();">Calculate</button>
-			<p id="oldnes"></p>
-			<p id="joke"></p>
+		<div id="wrap">	
+			<div class="top">
+				<h1>HOW OLD ARE YOU?</h1>
+			</div>
+
+			<div id="main">
+					
+					<h2>Your birthday</h2>
+					
+					<div class="day">
+						<h3>Day</h3>
+						<input type="number" name="dan" id="dan"> 
+					</div>
+
+					<div class="month">
+						<h3>Month</h3>	
+						<input type="number" name="mesec" id="mesec">
+					</div>
+					
+					<div class="year">
+						<h3>Year</h3>
+						<input type="number" name="godina" id="godina">
+					</div>
+					
+					<br>
+
+					<a id="toScroll" href="" data-scroll><button id="calculate" onclick="calculate();">Calculate</button></a>
+					
+					<p id="oldnes"></p>
+					<br>
+					<p id="otherDetails"></p>
+
+			</div>
 		</div>
 
+		<div id="devide"></div>
+		<div class="epoch">
+			<div id="thirties">
+				<p id="begin">1930</p>
+				<img src="img/30.png">
+				<p>1931</p>
+				<p>1932</p>
+				<p>1933</p>
+				<p>1934</p>
+				<p>1935</p>
+				<p>1936</p>
+				<p>1937</p>
+				<p>1938</p>
+				<p>1939</p>
+			</div>
+			<div id="forties">
+				<p id="begin">1940</p>
+				<img src="img/40.png">
+				<p>1941</p>
+				<p>1942</p>
+				<p>1943</p>
+				<p>1944</p>
+				<p>1945</p>
+				<p>1946</p>
+				<p>1947</p>
+				<p>1948</p>
+				<p>1949</p>
+			</div>
+			<div id="fifties">
+				<p id="begin">1950</p>
+				<img src="img/50.png">
+				<p>1951</p>
+				<p>1952</p>
+				<p>1953</p>
+				<p>1954</p>
+				<p>1955</p>
+				<p>1956</p>
+				<p>1957</p>
+				<p>1958</p>
+				<p>1959</p>
+			</div>
+			<div id="sixties">
+				<p id="begin">1960</p>
+				<img src="img/60.png">
+				<p>1961</p>
+				<p>1962</p>
+				<p>1963</p>
+				<p>1964</p>
+				<p>1965</p>
+				<p>1966</p>
+				<p>1967</p>
+				<p>1968</p>
+				<p>1969</p>
+			</div>
+			<div id="seventies">
+				<p id="begin">1970</p>
+				<img src="img/70.png">
+				<p>1971</p>
+				<p>1972</p>
+				<p>1973</p>
+				<p>1974</p>
+				<p>1975</p>
+				<p>1976</p>
+				<p>1977</p>
+				<p>1978</p>
+				<p>1979</p>
+			</div>
+			<div id="eighties">
+				<p id="begin">1980</p>
+				<img src="img/80.png">
+				<p>1981</p>
+				<p>1982</p>
+				<p>1983</p>
+				<p>1984</p>
+				<p>1985</p>
+				<p>1986</p>
+				<p>1987</p>
+				<p>1988</p>
+				<p>1989</p>
+			</div>
+			<div id="nineties">
+				<p id="begin">1990</p>
+				<img src="img/90.png">
+				<p>1991</p>
+				<p>1992</p>
+				<p>1993</p>
+				<p>1994</p>
+				<p>1995</p>
+				<p>1996</p>
+				<p>1997</p>
+				<p>1998</p>
+				<p>1999</p>
+			</div>
+			<div id="twoThousands">
+				<p id="begin">2000</p>
+				<img src="img/00.png">
+				<p>2001</p>
+				<p>2002</p>
+				<p>2003</p>
+				<p>2004</p>
+				<p>2005</p>
+				<p>2006</p>
+				<p>2007</p>
+				<p>2008</p>
+				<p>2009</p>
+			</div>
+			<div id="tens">
+				<p id="begin">2010</p>
+				<img src="img/10.png">
+				<p>2011</p>
+				<p>2012</p>
+				<p>2013</p>
+				<p>2014</p>
+				<p>2015</p>
+				<p>2016</p>
+				<p>2017</p>
+				<p>2018</p>
+				<p>2019</p>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/jquery.scroller.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+
 	</body>
 
 </html>
