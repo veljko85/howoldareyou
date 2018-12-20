@@ -1,3 +1,11 @@
+$(document).ready(function(){
+	$("a[data-scroll]").scroller();
+});		
+
+			function wrapMainSize(){
+				document.getElementById("wrap").style.height = document.body.clientHeight - 833 + "px";
+			}
+
 			function calculate(){
 				var dan = document.getElementById("dan").value;
 				var mesec = document.getElementById("mesec").value;
@@ -22,22 +30,36 @@
 				if (dayOld < 0 && monOld == 0) {
 					document.getElementById("oldnes").innerHTML = "You are old " + (dayOld + 30) + " days, "  + (monOld + 11) + " months, and " + (yearOld - 1) + " years.";
 				}
-				if (dan == 16 && mesec == 12 && godina == 1985){
-					document.getElementById("joke").innerHTML = "I ti pirke mislis da ovo moze svako da napravi !?";
-				}
-				if (dan == 9 && mesec == 7 && godina == 1987){
-					document.getElementById("joke").innerHTML = "Buci buc Stralence!";
-				}
-				if (dan == 8 && mesec == 3 && godina == 1985){
-					document.getElementById("joke").innerHTML = "Misika Misika!";
-				}
-				if (dan == 23 && mesec == 10 && godina == 1985){
-					document.getElementById("joke").innerHTML = "Ti si doktor za programiranje!!!";
-				}
-				if (dan == 17 && mesec == 5 && godina == 1991){
-					document.getElementById("joke").innerHTML = "Jeca pereca :)";
-				}
 				if (dan < 1 || dan > 31 || mesec < 1 || mesec > 12 || godina > 2019) {
 					document.getElementById("oldnes").innerHTML = "Wrong input";
 				}
+				if (godina >= 1930 && godina < 1940) {
+					document.getElementById("toScroll").href = "#thirties";
+				}
+				if (godina >= 1940 && godina < 1950) {
+					document.getElementById("toScroll").href = "#forties";
+				}
+				if (godina >= 1950 && godina < 1960) {
+					document.getElementById("toScroll").href = "#fifties";
+				}
+				if (godina >= 1960 && godina < 1970) {
+					document.getElementById("toScroll").href = "#sixties";
+				}
+				if (godina >= 1970 && godina < 1980) {
+					document.getElementById("toScroll").href = "#seventies";
+				}
+				if (godina >= 1980 && godina < 1990) {
+					document.getElementById("toScroll").href = "#eighties";
+					document.getElementById("otherDetails").innerHTML = "You are born in the eighties. The decade saw great socioeconomic change due to advances in technology and a worldwide move away from planned economies and towards laissez-faire capitalism.";
+				}
+				if (godina >= 1990 && godina < 2000) {
+					document.getElementById("toScroll").href = "#nineties";
+				}
+				if (godina >= 2000 && godina < 2010) {
+					document.getElementById("toScroll").href = "#twoThousands";
+				}
+				if (godina >= 2010 && godina < 2020) {
+					document.getElementById("toScroll").href = "#tens";
+				}
+
 			}
