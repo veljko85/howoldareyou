@@ -17,6 +17,8 @@ $(document).ready(function(){
 				var monOld = presMonth - mesec;
 				var yearOld = presYear - godina;
 
+				document.getElementById("wrap").style.marginTop = "833px";
+
 				if (dayOld < 0 && monOld >= 0){
 					document.getElementById("oldnes").innerHTML = "You are old " + (dayOld + 30) + " days, "  + (monOld -1) + " months, and " + yearOld + " years.";
 				}
@@ -35,18 +37,23 @@ $(document).ready(function(){
 				}
 				if (godina >= 1930 && godina < 1940) {
 					document.getElementById("toScroll").href = "#thirties";
+
 				}
 				if (godina >= 1940 && godina < 1950) {
 					document.getElementById("toScroll").href = "#forties";
+
 				}
 				if (godina >= 1950 && godina < 1960) {
 					document.getElementById("toScroll").href = "#fifties";
+
 				}
 				if (godina >= 1960 && godina < 1970) {
 					document.getElementById("toScroll").href = "#sixties";
+
 				}
 				if (godina >= 1970 && godina < 1980) {
 					document.getElementById("toScroll").href = "#seventies";
+
 				}
 				if (godina >= 1980 && godina < 1990) {
 					document.getElementById("toScroll").href = "#eighties";
@@ -54,9 +61,11 @@ $(document).ready(function(){
 				}
 				if (godina >= 1990 && godina < 2000) {
 					document.getElementById("toScroll").href = "#nineties";
+
 				}
 				if (godina >= 2000 && godina < 2010) {
 					document.getElementById("toScroll").href = "#twoThousands";
+
 				}
 				if (godina >= 2010 && godina < 2020) {
 					document.getElementById("toScroll").href = "#tens";

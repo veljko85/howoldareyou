@@ -5,9 +5,9 @@ body {
   body #wrap {
     text-align: center;
     width: 100%;
-    margin-top: 833px;
     position: fixed;
-    background-color: rgba(255, 0, 0, 0.7); }
+    background-color: rgba(255, 0, 0, 0.7);
+    transition: 2s; }
     body #wrap .top {
       width: 100%; }
       body #wrap .top h1 {
