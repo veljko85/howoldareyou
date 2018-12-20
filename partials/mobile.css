@@ -1,0 +1,55 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(red, yellow); }
+  body #wrap {
+    text-align: center;
+    width: 100%;
+    margin-top: 833px;
+    position: fixed;
+    background-color: rgba(255, 0, 0, 0.7); }
+    body #wrap .top {
+      width: 100%; }
+      body #wrap .top h1 {
+        font-size: 150px; }
+    body #wrap #main .day, body #wrap #main .month, body #wrap #main .year {
+      display: inline-block; }
+    body #wrap #main #dan, body #wrap #main #mesec {
+      width: 150px;
+      height: 100px;
+      font-size: 90px;
+      margin-right: 20px;
+      text-align: right; }
+    body #wrap #main #godina {
+      width: 300px;
+      height: 100px;
+      font-size: 90px;
+      text-align: right; }
+    body #wrap #main h2 {
+      font-size: 70px; }
+    body #wrap #main h3 {
+      font-size: 50px; }
+    body #wrap #main button {
+      width: 300px;
+      height: 100px;
+      margin-top: 50px;
+      font-size: 50px; }
+    body #wrap #main #oldnes, body #wrap #main #otherDetails {
+      font-size: 50px; }
+  body #devide {
+    width: 100%;
+    height: 100vh; }
+  body .epoch {
+    width: 100%;
+    margin-bottom: 75vh; }
+    body .epoch p {
+      font-size: 50px;
+      padding-bottom: 20px; }
+    body .epoch #begin {
+      font-size: 75px; }
+    body .epoch img {
+      float: right; }
+  body #scroller-top-button {
+    display: none; }
+
+/*# sourceMappingURL=mobile.css.map */
