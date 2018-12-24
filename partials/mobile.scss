@@ -11,12 +11,14 @@
 			position: fixed;
 			background-color: rgba(255, 0, 0, 0.7);
 			transition: 2s;
+			padding-top: 100px;
 						
 			.top	{
 				width: 100%;
 
-				h1	{
-					font-size: 150px;
+				#title	{
+					font-size: 100px;
+					transition: 1s;
 				}
 			}
 
@@ -55,6 +57,15 @@
 				#oldnes, #otherDetails	{
 					font-size: 50px;
 				}
+
+				#otherDetails	{
+					font-size: 50px;
+					font-weight: 700;
+				}
+				#oldnes	{
+					font-size: 80px;
+					font-weight: 700;
+				}
 			}
 		}
 
@@ -78,6 +89,10 @@
 
 			img  {
 				float: right;
+			}
+			#thirties, #forties, #fifties, #sixties, #seventies, #eighties, #nineties, #twoThousands, #tens	{
+				width: 100%;
+				height: 850px;
 			}
 
 		}											

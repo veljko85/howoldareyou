@@ -3,7 +3,7 @@ $(document).ready(function(){
 });		
 
 			function wrapMainSize(){
-				document.getElementById("wrap").style.height = document.body.clientHeight - 833 + "px";
+				document.getElementById("wrap").style.height = document.body.clientHeight - 840 + "px";
 			}
 
 			function calculate(){
@@ -17,7 +17,9 @@ $(document).ready(function(){
 				var monOld = presMonth - mesec;
 				var yearOld = presYear - godina;
 
-				document.getElementById("wrap").style.marginTop = "833px";
+				document.getElementById("wrap").style.marginTop = "840px";
+				document.getElementById("title").style.fontSize = "50px";
+				document.getElementById("wrap").style.paddingTop = "10px";
 
 				if (dayOld < 0 && monOld >= 0){
 					document.getElementById("oldnes").innerHTML = "You are old " + (dayOld + 30) + " days, "  + (monOld -1) + " months, and " + yearOld + " years.";

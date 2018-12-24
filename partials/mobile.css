@@ -7,11 +7,13 @@ body {
     width: 100%;
     position: fixed;
     background-color: rgba(255, 0, 0, 0.7);
-    transition: 2s; }
+    transition: 2s;
+    padding-top: 100px; }
     body #wrap .top {
       width: 100%; }
-      body #wrap .top h1 {
-        font-size: 150px; }
+      body #wrap .top #title {
+        font-size: 100px;
+        transition: 1s; }
     body #wrap #main .day, body #wrap #main .month, body #wrap #main .year {
       display: inline-block; }
     body #wrap #main #dan, body #wrap #main #mesec {
@@ -36,6 +38,12 @@ body {
       font-size: 50px; }
     body #wrap #main #oldnes, body #wrap #main #otherDetails {
       font-size: 50px; }
+    body #wrap #main #otherDetails {
+      font-size: 50px;
+      font-weight: 700; }
+    body #wrap #main #oldnes {
+      font-size: 80px;
+      font-weight: 700; }
   body #devide {
     width: 100%;
     height: 100vh; }
@@ -49,6 +57,9 @@ body {
       font-size: 75px; }
     body .epoch img {
       float: right; }
+    body .epoch #thirties, body .epoch #forties, body .epoch #fifties, body .epoch #sixties, body .epoch #seventies, body .epoch #eighties, body .epoch #nineties, body .epoch #twoThousands, body .epoch #tens {
+      width: 100%;
+      height: 850px; }
   body #scroller-top-button {
     display: none; }
 
