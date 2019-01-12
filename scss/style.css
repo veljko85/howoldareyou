@@ -5,6 +5,7 @@ body {
   body #wrap {
     text-align: center;
     width: 100%;
+    height: 100%;
     position: fixed;
     background-color: rgba(255, 0, 0, 0.7);
     transition: 2s;
@@ -37,12 +38,7 @@ body {
       margin-top: 50px;
       font-size: 50px; }
     body #wrap #main #oldnes, body #wrap #main #otherDetails {
-      font-size: 50px; }
-    body #wrap #main #otherDetails {
       font-size: 50px;
-      font-weight: 700; }
-    body #wrap #main #oldnes {
-      font-size: 80px;
       font-weight: 700; }
   body #devide {
     width: 100%;
@@ -62,5 +58,135 @@ body {
       height: 850px; }
   body #scroller-top-button {
     display: none; }
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(red, yellow); }
+    body #wrap {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background-color: rgba(255, 0, 0, 0.7);
+      transition: 2s;
+      padding-top: 100px; }
+      body #wrap .top {
+        width: 100%; }
+        body #wrap .top #title {
+          font-size: 100px;
+          transition: 1s; }
+      body #wrap #main .day, body #wrap #main .month, body #wrap #main .year {
+        display: inline-block; }
+      body #wrap #main #dan, body #wrap #main #mesec {
+        width: 150px;
+        height: 100px;
+        font-size: 90px;
+        margin-right: 20px;
+        text-align: right; }
+      body #wrap #main #godina {
+        width: 300px;
+        height: 100px;
+        font-size: 90px;
+        text-align: right; }
+      body #wrap #main h2 {
+        font-size: 70px; }
+      body #wrap #main h3 {
+        font-size: 50px; }
+      body #wrap #main button {
+        width: 300px;
+        height: 100px;
+        margin-top: 50px;
+        font-size: 50px; }
+      body #wrap #main #oldnes, body #wrap #main #otherDetails {
+        font-size: 40px;
+        font-weight: 700; }
+    body #devide {
+      width: 100%;
+      height: 100vh; }
+    body .epoch {
+      width: 100%;
+      margin-bottom: 50vh; }
+      body .epoch p {
+        font-size: 40px;
+        padding-bottom: 15px; }
+      body .epoch #begin {
+        font-size: 50px; }
+      body .epoch img {
+        float: right;
+        height: 300px; }
+      body .epoch #eighties img, body .epoch #nineties img, body .epoch #twoThousands img, body .epoch #tens img {
+        height: 500px; }
+      body .epoch #thirties, body .epoch #forties, body .epoch #fifties, body .epoch #sixties, body .epoch #seventies, body .epoch #eighties, body .epoch #nineties, body .epoch #twoThousands, body .epoch #tens {
+        width: 100%;
+        height: 600px; }
+    body #scroller-top-button {
+      display: none; } }
+@media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(red, yellow); }
+    body #wrap {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background-color: rgba(255, 0, 0, 0.7);
+      transition: 2s;
+      padding-top: 100px; }
+      body #wrap .top {
+        width: 100%; }
+        body #wrap .top #title {
+          font-size: 100px;
+          transition: 1s; }
+      body #wrap #main .day, body #wrap #main .month, body #wrap #main .year {
+        display: inline-block; }
+      body #wrap #main #dan, body #wrap #main #mesec {
+        width: 100px;
+        height: 66px;
+        font-size: 60px;
+        margin-right: 20px;
+        text-align: right; }
+      body #wrap #main #godina {
+        width: 200px;
+        height: 66px;
+        font-size: 60px;
+        text-align: right; }
+      body #wrap #main h2 {
+        font-size: 50px; }
+      body #wrap #main h3 {
+        font-size: 40px; }
+      body #wrap #main button {
+        width: 200px;
+        height: 66px;
+        margin-top: 20px;
+        font-size: 40px; }
+      body #wrap #main #oldnes, body #wrap #main #otherDetails {
+        font-size: 30px;
+        font-weight: 700; }
+    body #devide {
+      width: 100%;
+      height: 100vh; }
+    body .epoch {
+      width: 100%;
+      margin-bottom: 50vh; }
+      body .epoch p {
+        font-size: 30px;
+        padding-bottom: 10px; }
+      body .epoch #begin {
+        font-size: 40px; }
+      body .epoch img {
+        float: right;
+        height: 300px; }
+      body .epoch #eighties img, body .epoch #nineties img, body .epoch #twoThousands img, body .epoch #tens img {
+        height: 20vw;
+        margin-right: 40vw; }
+      body .epoch #thirties, body .epoch #forties, body .epoch #fifties, body .epoch #sixties, body .epoch #seventies, body .epoch #eighties, body .epoch #nineties, body .epoch #twoThousands, body .epoch #tens {
+        width: 100%;
+        height: 50vh; }
+    body #scroller-top-button {
+      display: none; } }
 
 /*# sourceMappingURL=style.css.map */

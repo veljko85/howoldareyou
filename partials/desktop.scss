@@ -1,3 +1,5 @@
+@media only screen and (min-device-width: 1024px) and (orientation: landscape){
+	
 
 	
 	body {
@@ -31,33 +33,33 @@
 				}
 
 				#dan, #mesec	{
-					width: 150px;
-					height: 100px;
-					font-size: 90px;
+					width: 100px;
+					height: 66px;
+					font-size: 60px;
 					margin-right: 20px;
 					text-align: right;
 
 				}
 				#godina	{
-					width: 300px;
-					height: 100px;
-					font-size: 90px;
+					width: 200px;
+					height: 66px;
+					font-size: 60px;
 					text-align: right;
 				}
 				h2	{
-				font-size: 70px;
-				}
-				h3	{
 				font-size: 50px;
 				}
+				h3	{
+				font-size: 40px;
+				}
 				button	{
-					width: 300px;
-					height: 100px;
-					margin-top: 50px;
-					font-size: 50px;
+					width: 200px;
+					height: 66px;
+					margin-top: 20px;
+					font-size: 40px;
 				}
 				#oldnes, #otherDetails	{
-					font-size: 50px;
+					font-size: 30px;
 					font-weight: 700;
 				}
 			}
@@ -70,23 +72,30 @@
 		}
 		.epoch	{
 			width: 100%;
-			margin-bottom: 75vh;
+			margin-bottom: 50vh;
 
 			p	{
-				font-size: 50px;
-				padding-bottom: 20px;
+				font-size: 30px;
+				padding-bottom: 10px;
 			}
 
 			#begin	{
-				font-size: 75px;
+				font-size: 40px;
 			}
 
 			img  {
 				float: right;
+				height: 300px;
+			}
+			#eighties, #nineties, #twoThousands, #tens	{
+				img  {
+				height: 20vw;
+				margin-right: 40vw;
+				}
 			}
 			#thirties, #forties, #fifties, #sixties, #seventies, #eighties, #nineties, #twoThousands, #tens	{
 				width: 100%;
-				height: 850px;
+				height: 50vh;
 			}
 
 		}											
@@ -98,3 +107,4 @@
 			display: none;
 		}
 	}
+}

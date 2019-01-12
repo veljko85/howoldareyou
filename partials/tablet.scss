@@ -1,3 +1,5 @@
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px){
+	
 
 	
 	body {
@@ -57,9 +59,10 @@
 					font-size: 50px;
 				}
 				#oldnes, #otherDetails	{
-					font-size: 50px;
+					font-size: 40px;
 					font-weight: 700;
 				}
+
 			}
 		}
 
@@ -70,23 +73,29 @@
 		}
 		.epoch	{
 			width: 100%;
-			margin-bottom: 75vh;
+			margin-bottom: 50vh;
 
 			p	{
-				font-size: 50px;
-				padding-bottom: 20px;
+				font-size: 40px;
+				padding-bottom: 15px;
 			}
 
 			#begin	{
-				font-size: 75px;
+				font-size: 50px;
 			}
 
 			img  {
 				float: right;
+				height: 300px;
+			}
+			#eighties, #nineties, #twoThousands, #tens	{
+				img  {
+				height: 500px;
+				}
 			}
 			#thirties, #forties, #fifties, #sixties, #seventies, #eighties, #nineties, #twoThousands, #tens	{
 				width: 100%;
-				height: 850px;
+				height: 600px;
 			}
 
 		}											
@@ -98,3 +107,4 @@
 			display: none;
 		}
 	}
+}
