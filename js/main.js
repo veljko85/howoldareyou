@@ -25,9 +25,10 @@ $(document).ready(function(){
 				if (window.screen.width >= 600) {
 				document.getElementById("wrap").style.marginTop = "600px";
 				document.getElementById("title").style.fontSize = "50px";
-				document.getElementById("wrap").style.paddingTop = "10px";				}
+				document.getElementById("wrap").style.paddingTop = "10px";				
+				}
 				
-				if (window.screen.width >= 1024) {
+				else if (window.screen.width >= 1024) {
 				document.getElementById("wrap").style.marginTop = "50vh";
 				document.getElementById("title").style.fontSize = "50px";
 				document.getElementById("wrap").style.paddingTop = "10px";
@@ -39,55 +40,57 @@ $(document).ready(function(){
 				if (dayOld < 0 && monOld >= 0){
 					document.getElementById("oldnes").innerHTML = "You are old " + (dayOld + 30) + " days, "  + (monOld -1) + " months, and " + yearOld + " years.";
 				}
-				if (dayOld >= 0 && monOld >= 0) {
+				else if (dayOld >= 0 && monOld >= 0) {
 					document.getElementById("oldnes").innerHTML = "You are old " + dayOld + " days, " + monOld + " months, and " + yearOld + " years.";}
-				if (monOld < 0 && dayOld >= 0) {
+				else if (monOld < 0 && dayOld >= 0) {
 					document.getElementById("oldnes").innerHTML = "You are old " + dayOld + " days, " + (monOld + 12) + " months, and " + (yearOld - 1) + " years.";}		
-				if (dayOld < 0 && monOld < 0)	{
+				else if (dayOld < 0 && monOld < 0)	{
 					document.getElementById("oldnes").innerHTML = "You are old " + (dayOld + 30) + " days, " + (monOld + 12) + " months, and " + (yearOld - 1) + " years.";
 				}
-				if (dayOld < 0 && monOld == 0) {
+				else if (dayOld < 0 && monOld == 0) {
 					document.getElementById("oldnes").innerHTML = "You are old " + (dayOld + 30) + " days, "  + (monOld + 11) + " months, and " + (yearOld - 1) + " years.";
 				}
-				if (dan < 1 || dan > 31 || mesec < 1 || mesec > 12) {
+				else if (dan < 1 || dan > 31 || mesec < 1 || mesec > 12) {
 					document.getElementById("oldnes").innerHTML = "Wrong input";
 				}
-				if (godina > 2019) {
+				else if (godina > 2019) {
 					document.getElementById("oldnes").innerHTML = "You are not born yet!"
 				}
+				
+
 				if (godina >= 1930 && godina < 1940) {
 					document.getElementById("toScroll").href = "#thirties";
 					document.getElementById("otherDetails").innerHTML = "You are born in the thirties."
 				}
-				if (godina >= 1940 && godina < 1950) {
+				else if (godina >= 1940 && godina < 1950) {
 					document.getElementById("toScroll").href = "#forties";
 					document.getElementById("otherDetails").innerHTML = "You are born in the forties."	
 				}
-				if (godina >= 1950 && godina < 1960) {
+				else if (godina >= 1950 && godina < 1960) {
 					document.getElementById("toScroll").href = "#fifties";
 					document.getElementById("otherDetails").innerHTML = "You are born in the fifties."
 				}
-				if (godina >= 1960 && godina < 1970) {
+				else if (godina >= 1960 && godina < 1970) {
 					document.getElementById("toScroll").href = "#sixties";
 					document.getElementById("otherDetails").innerHTML = "You are born in the sixties."	
 				}
-				if (godina >= 1970 && godina < 1980) {
+				else if (godina >= 1970 && godina < 1980) {
 					document.getElementById("toScroll").href = "#seventies";
 					document.getElementById("otherDetails").innerHTML = "You are born in the seventies."
 				}
-				if (godina >= 1980 && godina < 1990) {
+				else if (godina >= 1980 && godina < 1990) {
 					document.getElementById("toScroll").href = "#eighties";
 					document.getElementById("otherDetails").innerHTML = "You are born in the eighties. The decade saw great socioeconomic change due to advances in technology and a worldwide move away from planned economies and towards laissez-faire capitalism.";
 				}
-				if (godina >= 1990 && godina < 2000) {
+				else if (godina >= 1990 && godina < 2000) {
 					document.getElementById("toScroll").href = "#nineties";
 					document.getElementById("otherDetails").innerHTML = "You are born in the nineties."
 				}
-				if (godina >= 2000 && godina < 2010) {
+				else if (godina >= 2000 && godina < 2010) {
 					document.getElementById("toScroll").href = "#twoThousands";
 					document.getElementById("otherDetails").innerHTML = "You are born in the two-thousands."
 				}
-				if (godina >= 2010 && godina < 2020) {
+				else if (godina >= 2010 && godina < 2020) {
 					document.getElementById("toScroll").href = "#tens";
 					document.getElementById("otherDetails").innerHTML = "You are born in the two-thousands and tens."
 				}
